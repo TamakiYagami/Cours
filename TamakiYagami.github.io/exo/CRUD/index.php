@@ -1,5 +1,5 @@
 <?php
-    require_once('./Controllers/read_ctrl.php');
+    // require_once('./Controllers/read_ctrl.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -53,20 +53,20 @@
                 <th>Actions :</th>
             </tr>
             <?php
-                foreach ($Tableau as $ligne) {
-                    echo '<tr>';
+                // foreach ($Tableau as $ligne) {
+                //     echo '<tr>';
 
-                    foreach ($ligne as $column) {
-                        echo "<td>$column</td>";
-                    }
+                //     foreach ($ligne as $column) {
+                //         echo "<td>$column</td>";
+                //     }
                     
-                    echo "<td> 
-                        <button name='modify' value='$ligne->id' formaction='Views/update.php'>Modifier</button> 
-                        <button name='delete' value='$ligne->id' formaction='Controllers/delete_ctrl.php'>Supprimer</button> 
-                    </td>";
+                //     echo "<td> 
+                //         <button name='modify' value='$ligne->id' formaction='Views/update.php'>Modifier</button> 
+                //         <button name='delete' value='$ligne->id' formaction='Controllers/delete_ctrl.php'>Supprimer</button> 
+                //     </td>";
 
-                    echo '</tr>';
-                }
+                //     echo '</tr>';
+                // }
             ?>
         </table>
     </form>
