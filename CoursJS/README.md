@@ -69,7 +69,9 @@ Un else if ne ce met jamais après un else sinon tu meurt et ton script ausi (ps
 ## Opérateurs
 
 == egalité il ne vérifie pas le type de la variable
+
 === strictement egale il vérifie le type de la variable
+
 si on a deux variables 
 
     var nombreString = "10" Le type est STRING
@@ -82,6 +84,7 @@ si on a deux variables
     }
 
 < / <= inférieur / inférieur ou égal
+
 \> / >= supérieur / supérieux ou égal
 
 ### != Different de 
@@ -137,6 +140,7 @@ Chaque double ligne revient à la même chose
 ### Modulo
 
 Le modulo sert à récupérer le reste d'une division euclidienne 
+
 Exemple : 
 
     7 % 2 = 1 Car on a bien un reste
