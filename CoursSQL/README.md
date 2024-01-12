@@ -17,11 +17,11 @@ Pour afficher différent chose on peux utiliser SHOW donc en concret
 
 ### Afficher les bases de donnée
 ```sql
-    SHOW DATABASES;
+SHOW DATABASES;
 ```
 ### Afficher les tables qu'il ce trouve dans une base de donnée
 ```sql
-    SHOW TABLES;
+SHOW TABLES;
 ```
 ### Afficher les colums qu'il ce trouve dans une table
 ```sql
@@ -107,23 +107,23 @@ ALTER TABLE nomTable
 ```
 ## J'ajoute une colonne
 ```sql
-    ALTER TABLE nomTable
-        ADD nomColonneChien VARCHAR(100)
+ALTER TABLE nomTable
+    ADD nomColonneChien VARCHAR(100)
 ```
 ## Je retire une colonne
 ```sql
-    ALTER TABLE nomTable
-        DROP nomColonne
+ALTER TABLE nomTable
+    DROP nomColonne
 ```
 ## Je modifie une colonne
 ```sql
-    ALTER TABLE nomTable
-        MODIFY nomColoneChien VARCHAR(200)
+ALTER TABLE nomTable
+    MODIFY nomColoneChien VARCHAR(200)
 ```
 ## Je change le nom d'une colonne
 ```sql
-    ALTER TABLE nomTable
-        CHANGE nomColonneChien nomColonneChat;
+ALTER TABLE nomTable
+    CHANGE nomColonneChien nomColonneChat;
 ```
 
 Alter table permet de modifier une colonne de la table défini dans mon cas juste au dessus je défini la colonne nomColonne comme clé primaire
