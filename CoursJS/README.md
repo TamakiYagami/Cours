@@ -40,31 +40,33 @@ Les deux fonctionnes pareil
 if / else if / else / switch
 Si / Sinon si/ sinon/ multi condition
 
-
-    if (UareAlive?()) {
-        YES
-    } else if () {
-        MAYBE
-    } else {
-        NO
-    }
+```js
+if (UareAlive?()) {
+    YES
+} else if () {
+    MAYBE
+} else {
+    NO
+}
+```
 Un else if ne ce met jamais après un else sinon tu meurt et ton script ausi (ps: c'est moi qui te tue)
 
-
-    switch(UAreAlive?()) {
-        case 'Yes':
-            console.log('Oui')
-            break; // Faire attention a ne pas oublié le break car si on le met pas tout explose et l'action suivante ce sera jouer même si elle ne correspond pas 
-        case 'No':
-            console.log('Non')
-            break;
-        case 'MAYBE':
-            console.log("Je ne sais pas")
-            break;
-        default:
-            console.log("Je n'existe pas")
-            break;
-    }
+```js
+switch(UAreAlive?()) {
+    case 'Yes':
+        console.log('Oui')
+        break; // Faire attention a ne pas oublié le break car si on le met pas tout explose et l'action suivante ce sera jouer même si elle ne correspond pas 
+    case 'No':
+        console.log('Non')
+        break;
+    case 'MAYBE':
+        console.log("Je ne sais pas")
+        break;
+    default:
+        console.log("Je n'existe pas")
+        break;
+}
+```
 
 ## Opérateurs
 
@@ -73,68 +75,70 @@ Un else if ne ce met jamais après un else sinon tu meurt et ton script ausi (ps
 === strictement egale il vérifie le type de la variable
 
 si on a deux variables 
-
-    var nombreString = "10" Le type est STRING
-    var nombreInt = 10 Le type est INTEGER
-    if (nombreString == nombreInt) {
-        il passe ici puisque les deux variable sont entre gillement les même
-    }
-    if (nombreString === nombreInt) {
-        il ne passe pas ici puisque les variable n'ont pas le même type
-    }
-
+```js
+var nombreString = "10" Le type est STRING
+var nombreInt = 10 Le type est INTEGER
+if (nombreString == nombreInt) {
+    il passe ici puisque les deux variable sont entre gillement les même
+}
+if (nombreString === nombreInt) {
+    il ne passe pas ici puisque les variable n'ont pas le même type
+}
+```
 < / <= inférieur / inférieur ou égal
 
 \> / >= supérieur / supérieux ou égal
 
 ### != Different de 
 ### !== Strictement différent de 
-
-    var nombreInt = 10 Le type est INTEGER
-    if (nombreInt != 11) {
-        il passe bien ici
-    }
+```js
+var nombreInt = 10 Le type est INTEGER
+if (nombreInt != 11) {
+    il passe bien ici
+}
+```
 
 ### && Et puis 
-
-    var nombreInt = 10 Le type est INTEGER
-    if (NombreInt != 11 && NombreInt != 9) {
-        Il va passer ici car il est différent de 11 et de 9
-        Les deux valeurs doivent être correct
-    }
-
+```js
+var nombreInt = 10 Le type est INTEGER
+if (NombreInt != 11 && NombreInt != 9) {
+    Il va passer ici car il est différent de 11 et de 9
+    Les deux valeurs doivent être correct
+}
+```
 ### || Ou
-
-    var nombreInt = 10 Le type est INTEGER
-    if (NombreInt != 11 || NombreInt != 10) {
-        Il va passer ici car il est différent de 11 et de 10
-        C'est soit une variable sois l'autre
-    }
-
+```js
+var nombreInt = 10 Le type est INTEGER
+if (NombreInt != 11 || NombreInt != 10) {
+    Il va passer ici car il est différent de 11 et de 10
+    C'est soit une variable sois l'autre
+}
+```
 
 ### ! Inverse la variable
+```js
+var Beau = true
 
-    var Beau = true
+if (!Beau) {
+    Beau est false(moche) et ne passe donc pas 
+}
+```
+### Les Calculs
+```js 
+var Calcul = 10
 
-    if (!Beau) {
-        Beau est false(moche) et ne passe donc pas 
-    }
+Caclul = Calcul - 5
+Caclul -= 5
 
-### Les Calculs 
-    var Calcul = 10
+Caclul = Calcul + 5
+Calcul += 5
 
-    Caclul = Calcul - 5
-    Caclul -= 5
+Calcul = Calcul / 5 
+Calcul /= 5
 
-    Caclul = Calcul + 5
-    Calcul += 5
-
-    Calcul = Calcul / 5 
-    Calcul /= 5
-
-    Caclul = Caclul * 5
-    Calcul *= 5 
-
+Caclul = Caclul * 5
+Calcul *= 5 
+```
 Chaque double ligne revient à la même chose
 
 ### Modulo
@@ -155,66 +159,209 @@ pour   tandis que    fait puis    pour chaque    pour dans     pour de
                     tandis que      element
 
 ### For
-    for (
-        [Variable Incrémentante (point de départ)]; 
-        [Condition (Jusqu'ou il va aller)]; 
-        [Expression Incrémentante (De combien on va avancer)])
+```js
+for (
+    [Variable Incrémentante (point de départ)]; 
+    [Condition (Jusqu'ou il va aller)]; 
+    [Expression Incrémentante (De combien on va avancer)])
 
-    for (       
-        var i=0;              
-        i<10;                
-        i=i+0.1) {
-        console.log(`Bonjour ${i} fois`)
-    }
-
+for (       
+    var i=0;              
+    i<10;                
+    i=i+0.1) {
+    console.log(`Bonjour ${i} fois`)
+}
+```
 ### While
-    while (true) { // Tant qu'il est vrai la boucle continue
-        // Si je suis faux je ne tourne jamais
-        console.log('Je tourne')
-    }
-
+```js
+while (true) { // Tant qu'il est vrai la boucle continue
+    // Si je suis faux je ne tourne jamais
+    console.log('Je tourne')
+}
+```
 ### Do While
-    do {
-        // Je m'execute une fois
-    } while (true) // Puis tant que je suis vrai je continue
-
+```js
+do {
+    // Je m'execute une fois
+} while (true) // Puis tant que je suis vrai je continue
+```
 ### For in
-    let tab = [1, 2, 3, 4, 5, 6]
+```js
+let tab = [1, 2, 3, 4, 5, 6]
 
-    // Mon for ici va récupérer les index de mon tableau tab
-    for (const index in tab) {
-    }
-
+// Mon for ici va récupérer les index de mon tableau tab
+for (const index in tab) {
+}
+```
 Exemple : 
+```js
+//         0  1  2  3  4  5
+let tab = [1, 2, 3, 4, 5, 6]
+//                 age        prenom          nom
+let tab_assoc = {age: 10, prenom: "alfred", nom: "ok"}
 
-    //         0  1  2  3  4  5
-    let tab = [1, 2, 3, 4, 5, 6]
-    //                 age        prenom          nom
-    let tab_assoc = {age: 10, prenom: "alfred", nom: "ok"}
-
-    for (let index in tab_assoc) {
-        console.log("Voici l'index du tableau : " + index)
-        console.log("Voici la valeur de mon tableau : " + tab_assoc[index])
-    }
-
+for (let index in tab_assoc) {
+    console.log("Voici l'index du tableau : " + index)
+    console.log("Voici la valeur de mon tableau : " + tab_assoc[index])
+}
+```
 ### For of 
 Exemple : 
+```js
+//         0  1  2  3  4  5
+let tab = [1, 2, 3, 4, 5, 6]
 
-    //         0  1  2  3  4  5
-    let tab = [1, 2, 3, 4, 5, 6]
+// Pour les tableau associatif ca ne fonctionne pas !
 
-    // Pour les tableau associatif ca ne fonctionne pas !
-
-    for (let valeur of tab) {
-        console.log('Voici les valeurs du tableau :' + valeur)
-    }
+for (let valeur of tab) {
+    console.log('Voici les valeurs du tableau :' + valeur)
+}
+```
 
 ### ForEach
-    // Index   0  1  2  3  4  5 
-    let tab = [1, 2, 3, 4, 5, 6]
+```js
+// Index   0  1  2  3  4  5 
+let tab = [1, 2, 3, 4, 5, 6]
 
-    // Pour les tableau associatif ca ne fonctionne pas !
+// Pour les tableau associatif ca ne fonctionne pas !
 
-    tab.forEach((valeur, index) => {
-        console.log(valeur, index)
-    })
+tab.forEach((valeur, index) => {
+    console.log(valeur, index)
+})
+```
+
+
+# Les Tableaux
+
+Le nom qu'on leur porte est Array
+
+## Tableau Indexé
+Un tableau indexé est un tableau qui a ces propre index fixe qui sont des nombre de 0 a infiniement selon la taille du tableau
+Exemple d'un tableau indexé : 
+```js
+//Les index    0 1  2     3               4
+let tableau = [1,0,504,74545746, 45465465456465465456]
+```
+
+## Tableau Associatif
+Un tableau associatif est un tableau qui a besoin d'avoir des index définis par l'utilisateur
+Exemple d'un tableau associatif :
+```js
+// Les index défini    prenom               nom             
+let tableauAssocie = {"prenom" : "Pierre", "nom" : "GrandJean"}
+```
+
+# Fonctions pour les Tableau
+```js
+var TableauExemple = [1, 2, 3, 4, 'a', 'b', 'c', 'abc']
+```
+
+## push()
+Ajoute une ou plusieurs valeurs à la fin d'un tableau
+
+Exemple : 
+```js
+TableauExemple.push(8); // Je rajoute le nombre 8 à la fin du tableau
+TableauExemple.push('coucou') // Je rajoute la string coucou à la fin du tableau
+TableauExemple.push('d', 'e', 'f', 'g') // Je rajoute les string d e f g à la fin du tableau dans l'ordre que j'ai donne
+```
+
+## unshift()
+Ajoute une ou plusieurs valeurs au début d'un tableau
+
+Exemple : 
+```js
+TableauExemple.unshift(8); // Je rajoute le nombre 8 au début du tableau
+TableauExemple.unshift('coucou') // Je rajoute la string coucou au début du tableau
+TableauExemple.unshift('d', 'e', 'f', 'g') // Je rajoute les string d e f g au début du tableau dans l'ordre que j'ai donne
+```
+
+## shift()
+Supprime le premier élément d'un tableau
+
+Exemple : 
+```js
+TableauExemple.shift()
+// En considérant que le premier element du tableau est 1 en faisais la ligne du dessus le 1 est supprimé du tableau
+```
+
+## pop()
+Supprime le dernier élément d'un tableau
+
+Exemple : 
+```js
+TableauExemple.pop()
+// En considérant que le dernier element du tableau est abc en faisais la ligne du dessus abc est supprimé du tableau 
+```
+
+## sort()
+Permet de trier un tableau
+
+Exemple : 
+```js
+
+```
+
+## reverse()
+Permet de retourner un tableau le dernier deviens le premier et le premier deviens le dernier
+
+Exemple : 
+```js
+TableauExemple.reverse()
+// Notre tableau deviens
+// ['abc', 'c', 'b', 'a', 4, 3, 2, 1]
+```
+
+## join()
+Permet d'améliorer l'affiche d'un tableau
+
+Exemple : 
+```js
+TableauExemple.join('')
+// affiche 1234abcabc
+```
+
+## concat()
+Permet de fusionner deux tableaux en un seul en allant à la fin du tableau 
+
+Exemple : 
+```js
+let tableau = ["z", 'y', 'x', 10, 11, 12]
+TableauExemple.contact(tableau)
+// [1, 2, 3, 4, 'a', 'b', 'c', 'abc', "z", 'y', 'x', 10, 11, 12]
+```
+
+## slice()
+Permet de récupérer une partie du tableau
+
+Exemple : 
+```js
+TableauExemple.slice(2, 5)
+// [4, 'a', 'b']
+```
+
+## indexOf()
+Permet de récupérer un élément bien précis dans un tableau
+
+Exemple : 
+```js
+TableauExemple.indexOf('c')
+// Renvoie 6
+```
+
+## filter()
+Permet de filtrer un tableau, renvoi uniquement les éléments demander
+
+Exemple : 
+```js
+
+```
+
+## map()
+Permet de transformer chaque éléments d'un tableau en une autre chose
+
+Exemple : 
+```js
+
+```
+
