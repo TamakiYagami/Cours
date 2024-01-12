@@ -22,10 +22,12 @@ Concaténation sert ajouter certain élément a une chaine de caractère
 par exemple : 
 
 Je suis développeur + de site web
+
     var phrase = "Je suis développeur"
     phrase = phrase + " de site web"
 
 J'ai + 10 + nombre de stagiaire
+
     var NombreStagiaire = ""
     var nombre = 10
     NombreStagiaire = "J'ai " + nombre + " nombres de stagiaire"
