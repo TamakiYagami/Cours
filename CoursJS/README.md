@@ -27,12 +27,12 @@ var phrase = "Je suis développeur"
 phrase = phrase + " de site web"
 ```
 J'ai + 10 + nombre de stagiaire
-
-    var NombreStagiaire = ""
-    var nombre = 10
-    NombreStagiaire = "J'ai " + nombre + " nombres de stagiaire"
-    NombreStagiaire = `J'ai ${nombre} nombres de stagiaire`
-
+```js
+var NombreStagiaire = ""
+var nombre = 10
+NombreStagiaire = "J'ai " + nombre + " nombres de stagiaire"
+NombreStagiaire = `J'ai ${nombre} nombres de stagiaire`
+```
 Les deux fonctionnes pareil 
 
 # Les conditions 
