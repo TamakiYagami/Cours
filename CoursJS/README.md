@@ -32,7 +32,8 @@ J'ai + 10 + nombre de stagiaire
     var nombre = 10
     NombreStagiaire = "J'ai " + nombre + " nombres de stagiaire"
     NombreStagiaire = `J'ai ${nombre} nombres de stagiaire`
-// Les deux fonctionnes pareil 
+
+Les deux fonctionnes pareil 
 
 # Les conditions 
 
@@ -181,6 +182,7 @@ pour   tandis que    fait puis    pour chaque    pour dans     pour de
     }
 
 Exemple : 
+
     //         0  1  2  3  4  5
     let tab = [1, 2, 3, 4, 5, 6]
     //                 age        prenom          nom
@@ -193,6 +195,7 @@ Exemple :
 
 ### For of 
 Exemple : 
+
     //         0  1  2  3  4  5
     let tab = [1, 2, 3, 4, 5, 6]
 
