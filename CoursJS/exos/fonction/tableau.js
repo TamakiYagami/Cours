@@ -53,3 +53,4 @@ function reverseTab(tab) {
 
 console.log(reverseTab([1, 2, 3]));
 console.log(reverseTab([1, 1, 2, 2, 3]));
+

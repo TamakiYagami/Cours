@@ -329,7 +329,7 @@ Permet de fusionner deux tableaux en un seul en allant à la fin du tableau
 Exemple : 
 ```js
 let tableau = ["z", 'y', 'x', 10, 11, 12]
-TableauExemple.contact(tableau)
+TableauExemple.concat(tableau)
 // [1, 2, 3, 4, 'a', 'b', 'c', 'abc', "z", 'y', 'x', 10, 11, 12]
 ```
 
@@ -373,42 +373,53 @@ Exemple :
 Sert à mettre ou retirer des chiffres après la virgule
 Exemple : 
 ```js
-
+var nombre = 5
+console.log(nombre.toFixed(2)) // Me retourne 5.00 dans la console
+console.log(nombre.toFixed(10)) // Me retourne 5.0000000000 dans la console
 ```
 
 ## split
-Découpe une chaine de caractère avec un séparateur bien précis
+Découpe une chaine de caractère avec un séparateur bien précis et la transforme en tableau
 Exemple : 
 ```js
-
+var Texte = "Bonjour, je suis de bonne humeur"
+console.log(Texte.split(' ')) // Découpe à chaque occurence du caractère de l'espace
+// Renvoie donc ['Bonjour,', 'je', 'suis', 'de', 'bonne', 'humeur']
 ```
 
 ## replace
 Remplace tout ce qui correspond a une expression régulière par une chaîne de caractère donnée
 Exemple : 
 ```js
-
+var Texte = 'A mon temps perdu je suis un hacker'
+console.log(Texte.replace('a', '@')) // Change toute les occurances de la lettre a et la remplace par @ 
+// Me renvoie 'A mon temps perdu je suis un h@cker'
 ```
 
 ## parseFloat
 Convertit une chaîne de caractères en nombre décimal (à virgule)
 Exemple : 
 ```js
-
+var NombreText = '14.74587'
+console.log(parseFloat(NombreText)) // Convertit le texte en flotant 
+// Me renvoie 14.74587
 ```
 
 ## parseInt
 Convertit une chaîne de caractères en entier 
 Exemple : 
 ```js
-
+var NombreText = '14.74587'
+console.log(parseInt(NombreText)) // Convertit le texte en nombre entier
+// Renvoie 14
 ```
 
 ## toString
 Transforme un nombre en chaîne de caractère
 Exemple : 
 ```js
-
+var Nombre = 14584654654
+console.log(Nombre.toString()) // Me renvoie '14584654654'
 ```
 
 ## slice
@@ -416,12 +427,33 @@ Extrait une portion d’une chaîne et/ou d’un tableau. Retourne
 la sous-chaîne ou le sous-tableau demandé
 Exemple : 
 ```js
-
+var Texte = 'Je suis un Alien qui mange des haribo'
+console.log(Texte.slice(11, 17)) // Me renvoie 'Alien'
 ```
 
 ## indexOf
-Retourne l'index du premier caractère dans la chaîne qui correspond au paramètre donnée
+Retourne l'index de la première occurence dans la chaîne qui correspond au paramètre donnée
 Exemple : 
 ```js
+var Texte = "J'ai manger un kiwi et maintenant il est absant"
+console.log(Texte.indexOf('absent')) // Me renvoie 20
+```
 
+# Variable JavaScript 
+
+# Infinity
+Infinity contient le plus grand nombre imaginable et possible 
+Exemple : 
+```js
+var High = Infinity
+```
+
+# typeof 
+La fonction `typeof` permet de savoir quel type de variable on a utilisé
+Exemple :
+```js
+var Nombre = 10155
+var Texte = 'ABCDEFG'
+console.log(typeof Nombre) // Renvoie INTEGER puisque Nombre est un entier
+console.log(typeof Texte) // Renvoie STRING puisque Texte est une chaine de caractère 
 ```
