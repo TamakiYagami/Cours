@@ -453,7 +453,11 @@ La fonction `typeof` permet de savoir quel type de variable on a utilisé
 Exemple :
 ```js
 var Nombre = 10155
+var Float = 12.145
 var Texte = 'ABCDEFG'
+var Bool = false
 console.log(typeof Nombre) // Renvoie INTEGER puisque Nombre est un entier
 console.log(typeof Texte) // Renvoie STRING puisque Texte est une chaine de caractère 
+console.log(typeof Float) // Renvoie FLOAT puisque Float est un nombre flotant
+console.log(typeof Bool) // Renvoie BOOLEAN puisque Bool est un true ou false
 ```
