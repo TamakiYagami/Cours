@@ -387,6 +387,15 @@ console.log(Texte.split(' ')) // Découpe à chaque occurence du caractère de l
 // Renvoie donc ['Bonjour,', 'je', 'suis', 'de', 'bonne', 'humeur']
 ```
 
+## [... <Variable>]
+Converti une chaine de caractère en tableau a chaque occurence 
+```js
+var Texte = "Bonjour, je suis de bonne humeur"
+console.log([...Texte]) // Transforme la variable Texte en tableau
+// ['B', 'o', 'n', 'j', 'o', 'u', 'r', ',', ' ', 'j', 'e', ' ', 's', 'u', 'i', 's', ' ', 'd', 'e', ' ', 'b', 'o', 'n', 'n',
+// 'e', ' ', 'h', 'u', 'm', 'e', 'u', 'r']
+```
+
 ## replace
 Remplace tout ce qui correspond a une expression régulière par une chaîne de caractère donnée
 Exemple : 
@@ -404,7 +413,13 @@ var NombreText = '14.74587'
 console.log(parseFloat(NombreText)) // Convertit le texte en flotant 
 // Me renvoie 14.74587
 ```
-
+## Number 
+Convertit une variable en entier 
+```js
+var NombreText = '1445454'
+console.log(Number(NombreText)) // Convertit le texte en nombre entier
+// Renvoie 1445454
+```
 ## parseInt
 Convertit une chaîne de caractères en entier 
 Exemple : 
@@ -439,16 +454,35 @@ var Texte = "J'ai manger un kiwi et maintenant il est absant"
 console.log(Texte.indexOf('absent')) // Me renvoie 20
 ```
 
+## includes 
+Renvoie vrai si il trouve l'argument demander dans le tableau ou chaine de caractère sinon il renvoie faux si il ne trouve pas 
+Exemple : 
+```js
+var Texte = "J'ai manger un kiwi et maintenant il est absant"
+console.log(Texte.includes('et')) // Me renvoie true
+console.log(Texte.includes('mangue')) // Me renvoie false
+```
+
+## find
+Retourne la lettre si il l'a trouve dans un tableau ou une chaine de caractère sinon il retourne undefined
+Exemple :
+```js
+var Texte = "J'ai manger un kiwi et maintenant il est absant"
+var TableauTexte = Texte.split('')
+console.log(TableauTexte.find((Lettre => Lettre == 'et'))) // Me renvoie 'et'
+console.log(TableauTexte.find('mangue')) // Me renvoie undefined
+```
+
 # Variable JavaScript 
 
-# Infinity
+## Infinity
 Infinity contient le plus grand nombre imaginable et possible 
 Exemple : 
 ```js
 var High = Infinity
 ```
 
-# typeof 
+## typeof 
 La fonction `typeof` permet de savoir quel type de variable on a utilisé
 Exemple :
 ```js
@@ -456,8 +490,76 @@ var Nombre = 10155
 var Float = 12.145
 var Texte = 'ABCDEFG'
 var Bool = false
-console.log(typeof Nombre) // Renvoie INTEGER puisque Nombre est un entier
+console.log(typeof Nombre) // Renvoie NUMBER puisque Nombre est un entier
 console.log(typeof Texte) // Renvoie STRING puisque Texte est une chaine de caractère 
 console.log(typeof Float) // Renvoie FLOAT puisque Float est un nombre flotant
 console.log(typeof Bool) // Renvoie BOOLEAN puisque Bool est un true ou false
+if (typeof Nombre == "Number") {
+    console.log("C'est un nombre")
+}
 ```
+
+# Création de Fonction
+Une fonction est une partie de code nommée qui sert à etre executer quand on en a besoin et pouvoir etre réutiliser plusieur fois
+
+Chaque fonction peux avoir 1 ou plusieurs paramètre qui sans mettent entre les paranthèses 
+Un paramètre est local à la fonction ne pourra pas etre utilisé en dehors de celle ci il est défini à l'appel de la fonction
+
+## function <name> () {}
+Une fonction nommé peux etre executer en l'appelant
+Elle peux etre défini comme suit : 
+```js
+function maFonction() {
+    alert ("Bonjour !");
+}
+```
+
+## var <Variable> = function () {}
+Une fonction anonyme ne peut pas être appelée avant qu’elle n’ait été défini
+mais elle peut être stockée dans une variable pour être utilisée par la suite
+Défini comme suit : 
+```js
+var MaFonction = function () {
+    alert('Bonjour !');
+}
+```
+
+## () => {}
+Les fonctions fléché on un syntaxe courte qui permet de créer des fonctions plus simples. Les parenthèses
+doivent être omises si la fonction contient uniquement une expression à renvoyer.
+```js
+(a) => {
+    return a + 1;
+}
+```
+
+## function () {}()
+On peut appeler immédiatement une fonction anonyme après sa déclaration, sans lui
+donner le nom. Elle sera alors connue sous son nom généré automatiquement.
+```js
+function () {
+    alert('Bonjour !');
+}()
+```
+
+# Appel d'une fonction
+La plupart du temps, vous appelez une fonction avec ses paramètres entre parenthèses
+si cette dernière est prévue pour recevoir ces paramètres.
+## Appel de `MaFonction` sans argument 
+```js
+function MaFonction() {
+    return 'Salut'
+}
+console.log(MaFonction()) // Ici j'appel la fonction MaFonction sans paramètre et elle me renvoie son code executer 
+// Me renvoie 'Salut'
+```
+
+## Appel de `MaFonction2` avec l'argument `'Bonjour'`
+```js
+function MaFonction2(texte) {
+    return texte
+}
+console.log(MaFonction2('Bonjour')) // Ici j'appel MaFonction2 avec un paramètre et elle me renvoie son code executer
+// Me renvoie 'Bonjour'
+```
+

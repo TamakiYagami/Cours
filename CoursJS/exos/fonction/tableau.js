@@ -54,3 +54,31 @@ function reverseTab(tab) {
 console.log(reverseTab([1, 2, 3]));
 console.log(reverseTab([1, 1, 2, 2, 3]));
 
+
+// Écrivez une fonction qui prend un tableau d’éléments et ne renvoie que les entiers.
+// Exemple : 
+
+// getInt([1, 2, "3", "4", "5", 6]) ➞ [1, 2, 6]
+
+// getInt(["Vache", 20, "Cheval", 1, "Poule", 50]) ➞ [20, 1, 50]
+
+// getInt(["Str", false, 5.56, 6]) ➞ [6]
+
+function getInt(tab) {
+    // Première façon de faire l'exercice
+    let NewTab = []
+    for (let i = 0; i < tab.length; i++) {
+        if (Number.isInteger(tab[i])) {
+            NewTab.push(tab[i])
+        }
+    }    
+    return NewTab
+
+    // Deuxième façon de faire l'éxercice
+    return tab.filter(Number.isInteger)
+}
+
+console.log(getInt([1, 2, "3", "4", "5", 6]));
+console.log(getInt(["Vache", 20, "Cheval", 1, "Poule", 50]));
+console.log(getInt(["Str", false, 5.56, 6]));
+

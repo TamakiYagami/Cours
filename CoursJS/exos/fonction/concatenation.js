@@ -9,7 +9,15 @@
 
 
 function add(a, b) {
+    if (typeof a != typeof b) {
+        return null
+    }
     
+    if (typeof a == "string")
+        return Number(a) + Number(b)
+
+    return `${a}${b}`
+
 }
 
 console.log(add("2", "3"));
