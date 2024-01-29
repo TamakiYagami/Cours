@@ -26,7 +26,7 @@ function Piscine(longeur, largeur, haut, débit) {
 
 var piscinecreusée = new Piscine(8, 10, 3, 2)
 console.log(`La piscine va ce remplir en ${piscinecreusée.remplissage()} minutes`)
-
+console.log(piscinecreusée)
 var PiscineEnorme = new Piscine(100,100,100,100)
 
 
@@ -153,5 +153,29 @@ let EleveB = {
     Classe: "Terminale B"
 }
 
-console.log(EleveA.Matiere.math)
-console.log(EleveB.Matiere.math)
+// console.log(EleveA.Matiere.math)
+// console.log(EleveB.Matiere.math)
+
+
+let Ladder = {
+    step: 0,
+    up() {
+        this.step++
+        return this
+    },
+    down() {
+        this.step--
+        return this
+    },
+    show() {
+        console.log(this.step)
+    }
+}
+
+Ladder
+    .up()
+    .up()
+    .down()
+    .down()
+    .up()
+    .show()
