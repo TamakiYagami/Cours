@@ -1,12 +1,12 @@
 [Retour](https://github.com/TamakiYagami/Cours/tree/main/CoursJS)
 
-# -B Les boucles
+# Les boucles
 
 for /   while    /  do while /   foreach       / for in  /    for of 
 pour   tandis que    fait puis    pour chaque    pour dans     pour de 
                     tandis que      element
 
-### -B For
+### For
 ```js
 for (
     [Variable Incrémentant (point de départ)]; 
@@ -20,20 +20,20 @@ for (
     console.log(`Bonjour ${i} fois`)
 }
 ```
-### -B While
+### While
 ```js
 while (true) { // Tant qu'il est vrai la boucle continue
     // Si je suis faux je ne tourne jamais
     console.log('Je tourne')
 }
 ```
-### -B Do While
+### Do While
 ```js
 do {
     // Je m'execute une fois
 } while (true) // Puis tant que je suis vrai je continue
 ```
-### -B For in
+### For in
 ```js
 let tab = [1, 2, 3, 4, 5, 6]
 
@@ -53,7 +53,7 @@ for (let index in tab_assoc) {
     console.log("Voici la valeur de mon tableau : " + tab_assoc[index])
 }
 ```
-### -B For of 
+### For of 
 Exemple : 
 ```js
 //         0  1  2  3  4  5
@@ -66,7 +66,7 @@ for (let valeur of tab) {
 }
 ```
 
-### -B ForEach
+### ForEach
 ```js
 // Index   0  1  2  3  4  5 
 let tab = [1, 2, 3, 4, 5, 6]

@@ -1,15 +1,15 @@
 [Retour](https://github.com/TamakiYagami/Cours/tree/main/CoursJS)
 
-# -B let, var 
+# let, var 
 
 Création de variable qui peuvent être modifié
 
-# -B const 
+# const 
 
 Création de variable qui ne peuvent pas être modifié JAMAIS 
 complètement Statique
 
-# -B Type de Variables 
+# Type de Variables 
 
 - INTEGER : nombre réel/ nombre Entier
 - FLOAT : Nombre Imaginaire / Nombre à Virgule 
@@ -18,7 +18,7 @@ complètement Statique
 - BOOL : Vrai ou Faux
 - NULL : Valeur NULL qui n'est pas un type de variable mais on le considère comme parce qu'il est null
 
-# -B Concaténation
+# Concaténation
 
 Concaténation sert ajouter/additioner certain élément a une chaîne de caractère 
 par exemple : 
@@ -37,7 +37,7 @@ NombreStagiaire = `J'ai ${nombre} nombres de stagiaire`
 ```
 Les deux fonctionnes pareil 
 
-# -B Les conditions 
+# Les conditions 
 
 if / else if / else / switch
 Si / Sinon si/ sinon/ multi condition
@@ -70,7 +70,7 @@ switch(UAreAlive?()) {
 }
 ```
 
-## -B Opérateurs
+## Opérateurs
 
 == égalité il ne vérifie pas le type de la variable
 
@@ -91,8 +91,8 @@ if (nombreString === nombreInt) {
 
 \> / >= supérieur / supérieur ou égal
 
-### -B != Different de 
-### -B !== Strictement différent de 
+### != Different de 
+### !== Strictement différent de 
 ```js
 var nombreInt = 10 Le type est INTEGER
 if (nombreInt != 11) {
@@ -100,7 +100,7 @@ if (nombreInt != 11) {
 }
 ```
 
-### -B && Et puis 
+### && Et puis 
 ```js
 var nombreInt = 10 Le type est INTEGER
 if (NombreInt != 11 && NombreInt != 9) {
@@ -108,7 +108,7 @@ if (NombreInt != 11 && NombreInt != 9) {
     Les deux valeurs doivent être correct
 }
 ```
-### -B || Ou
+### || Ou
 ```js
 var nombreInt = 10 Le type est INTEGER
 if (NombreInt != 11 || NombreInt != 10) {
@@ -117,7 +117,7 @@ if (NombreInt != 11 || NombreInt != 10) {
 }
 ```
 
-### -B ! Inverse la variable
+### ! Inverse la variable
 ```js
 var Beau = true
 
@@ -125,7 +125,7 @@ if (!Beau) {
     Beau est false(moche) et ne passe donc pas 
 }
 ```
-### -B Les Calculs
+### Les Calculs
 ```js 
 var Calcul = 10
 
@@ -143,7 +143,7 @@ Calcul *= 5
 ```
 Chaque double ligne revient à la même chose
 
-### -B Modulo
+### Modulo
 
 Le modulo sert à récupérer le reste d'une division euclidienne 
 
