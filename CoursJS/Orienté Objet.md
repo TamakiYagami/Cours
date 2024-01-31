@@ -209,3 +209,8 @@ let Ladder = {
 }
 Ladder.up().up().down().down().up().show()
 ```
+
+
+# Les Classes 
+Les classes sont introduites en JavaScript pour permettre une structure plus organisée du code et faciliter l’utilisation de concepts
+On peut définir une class en JS avec le mot clé `class` suivi du nom de la class et des parenthèses qui contiennent les attributs ou les méthode

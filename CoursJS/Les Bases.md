@@ -2,12 +2,25 @@
 
 # let, var 
 
-Création de variable qui peuvent être modifié
+Création de variable qui peuvent être modifié 
+Exemple: 
+```js
+let MaVariable = "Coucou"
+var MaVariableSecondaire = "Hello"
+
+MaVariable = "Hello"
+MaVariableSecondaire = "Coucou"
+
+```
 
 # const 
 
 Création de variable qui ne peuvent pas être modifié JAMAIS 
 complètement Statique
+```js
+const MaConstante = "Je suis une constante"
+// MaConstante = "Je suis un autre texte" // Erreur
+```
 
 # Type de Variables 
 
@@ -152,6 +165,13 @@ Exemple :
     7 % 2 = 1 Car on a bien un reste
     8 % 3 = 2 Car on a bien un autre reste
     340 % 5 = 0 Car on a pas de reste
+
+```js
+var Deux = 2
+var Sept = 7
+console.log(Sept  % Deux) // Affiche 1 car il y a un reste
+
+```
 
 
 

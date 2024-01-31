@@ -19,6 +19,9 @@ let monDiv = document.getElementById("monId") // Récupère l’élément en uti
 ```
 #### innerHTML / textContent
 Les deux permettent de modifier le texte contenu dans les balises sélectionner
+Il faut faire attention si on met le textContent et que on met une balise HTML elle sera prise en texte et pas en balise alors
+que le innerHTML prendera la balise
+
 Exemple :
 ```js
 let MonP = document.getElementById("monId")
