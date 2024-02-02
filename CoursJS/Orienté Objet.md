@@ -214,3 +214,59 @@ Ladder.up().up().down().down().up().show()
 # Les Classes 
 Les classes sont introduites en JavaScript pour permettre une structure plus organisée du code et faciliter l’utilisation de concepts
 On peut définir une class en JS avec le mot clé `class` suivi du nom de la class et des parenthèses qui contiennent les attributs ou les méthode
+
+Exemple : 
+```js
+class NomDeMaClasseQuiNestPasTropLongueMaisQuandMemeUnPeu {
+    constructor(prenom, nom) { // IL EST OBLIGATOIRE
+        // On initialise les propriétés de ma classe
+        // Le constructeur sert à définir des propriétés et des méthodes par défaut
+        // Le constructeur est appelée automatiquement par la classe lors de la création d'une
+        // instance
+        this.test = 'Test'
+        this.Prenom = prenom
+        this.Nom = nom
+    }
+    // Je n'est pas besoin  d'ajouter le mot clé "function" avant la méthode  puisque je suis 
+    // dans une classe
+    PresenterSoi(couleur) { // Ici je créer une fonction  qui va afficher le prénom et le nom de l'objet en question 
+        console.log(`Je suis ${this.Prenom} ${this.Nom} et j'ai la couleur ${couleur}.`)
+    }
+}
+
+// Je créer une instance de ma classe
+// Une Instance est une copie exacte de ma Classe avec ses propres propriétés et méthodes
+const InstanceDeClasse = new NomDeMaClasseQuiNestPasTropLongueMaisQuandMemeUnPeu("Didier", "GrandJean")
+
+InstanceDeClasse.PresenterSoi('bleu')
+```
+
+## La méthode statique
+La méthode static est une méthode qui appartient à la classe elle-même plutôt qu’à l’objet créé à partir de cette dernière. 
+La méthode statique n'est pas appelée par l'instance d'une class mais bien par la classe elle
+même. Elle peut être utilisée pour définir des méthodes qui ne dépendent pas  de l'état courant de l'objet. 
+
+Exemple : 
+```js
+class MonSuperbeClubDeFootball {
+    constructor(joueurs) {
+        this.joueurs = []
+    }        
+    static nbMax = 11
+    static DateAujourdhui() {
+        const date = new Date();
+        return `${date.getHours()}h${date.getMinutes()}h${date.getSeconds()}`;
+    }
+
+    ajoutJoueur(joueur) {
+        if (this.joueurs.length < MonSuperbeClubDeFootball.nbMax) {
+            this.joueurs.push(joueur)
+        }
+    }
+}
+
+let Club = new MonSuperbeClubDeFootball()
+console.log(MonSuperbeClubDeFootball.nbMax)
+console.log(MonSuperbeClubDeFootball.DateAujourdhui())
+// console.log(Club.DateAujourdhui())
+```
