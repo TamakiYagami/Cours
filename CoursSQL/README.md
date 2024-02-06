@@ -13,34 +13,65 @@ DELETE ( DELETE )
 
 #
 
-Pour afficher différent chose on peux utiliser SHOW donc en concret
+## Créer un utilisateur sur Serveur SQL
 
+### CREATE USER
+```sql
+CREATE USER 'nom_utilisateur'@'localhost' IDENTIFIED BY 'mot_de_passe';
+-- Utiliser des caractères spéciaux comme @, $, %, etc. peut causer des problèmes
+```
+
+### Ajouter l'accès à une BDD `GRANT`
+```sql
+GRANT ALL PRIVILEGES ON nom_BDD.* TO 'nom_utilisateur'@'localhost'; 
+-- Donne la permission à toutes les tables et colonnes de la base de donnée "nom_BDD" à l'utilisateur nom_utilisateur
+```
+On peux aussi donnée l'accès à toute les base de donnée à l'utilisateur
+```sql
+GRANT ALL PRIVILEGES ON *.* TO 'nom_utilisateur'@'localhost';
+-- L'utilisateur nom_utilisateur  aura accès à toutes les bases de données et à tous les droits sur celles-ci.
+```
+### Mettre à jour le serveur pour qu'il accepte la connexion de cet utilisateur
+```sql
+FLUSH PRIVILEGES;
+```
+
+
+## Commande SQL
+
+Pour afficher différent chose on peux utiliser SHOW donc en concret
 ### Afficher les bases de donnée
 ```sql
 SHOW DATABASES;
 ```
+
 ### Afficher les tables qu'il ce trouve dans une base de donnée
 ```sql
 SHOW TABLES;
 ```
-### Afficher les colums qu'il ce trouve dans une table
+
+### Afficher les colonnes qu'il ce trouve dans une table
 ```sql
 SHOW COLUMNS FROM NomTable;
 ```
+
 ## Créer une base de donnée si elle n'existe pas
 ```sql
 CREATE DATABASE IF NOT EXISTS "BaseDeDonnee";
 ```
+
 ## Créer une base de donnée même si elle existe
 ```sql
 CREATE DATABASE "BaseDeDonnee"; 
 ```
+
 Une base de donnée c'est une base qui va stocké des données donc des tables
 
 ###### Permet de dire je rentre dans cette base de donnée et j'utilise ce qu'il ce trouve dedans
 ```sql
 USE BaseDeDonnee;
 ```
+
 #
 
 ## Créer une table si elle n'existe pas
@@ -129,6 +160,6 @@ ALTER TABLE nomTable
 Alter table permet de modifier une colonne de la table défini dans mon cas juste au dessus je défini la colonne nomColonne comme clé primaire
 
 
-# Clé Etrangère 
-Une clé etrangère c'est quand une colonne d'une table fait réference à une clé primaire d'une autre table
+# Clé Étrangère  
+Une clé étrangère c'est quand une colonne d'une table fait reference à une clé primaire d'une autre table
 Ils servent à faire en sorte que si on supprime le client de la base de donnée ca supprimera automatiquement toute ces commandes qu'il à effectué
