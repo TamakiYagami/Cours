@@ -96,3 +96,9 @@ Syntaxe :
 ```bash
 git merge
 ```
+
+### Pour effectuer toute les commandes pour inserer dans Github on peux utiliser
+
+```bash
+git add . && git commit -am "All" && git push
+```
