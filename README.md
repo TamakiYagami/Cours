@@ -13,8 +13,7 @@
 - Vert        => Cette un commentaire comme celui ci
 - Vert Clair  => Les types ( string, int, float, double, boolean, null, array = [] )
 - Violet      => Conditions (if, else, elseif, endif, for, while, dowhile, switch, 
-                                include, require, return, continue, break)
-
+                include, require, return, continue, break)
 - ()          => J'intègre des paramètres à une fonction à l'interieur des paranthèses avec variable
 - {}          => Je rentre dans l'element entre les accolade
 - []          => Je défini le tableau entre les crochet
