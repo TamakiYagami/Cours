@@ -6,7 +6,7 @@ require_once('../../function/db.php')
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
-    <link rel="stylesheet" href="../../style/atm.css">
+    <link rel="stylesheet" href="./atm.css">
 </head>
 <body>
     <a href="index.php">Page D'accueil</a>

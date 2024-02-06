@@ -21,7 +21,7 @@ if (isset($_GET) && !empty($_GET)) {
 <head>
     <meta charset="UTF-8">
     <title>Changement du mot de passe</title>
-    <link rel="stylesheet" href="../../style/connexion.css">
+    <link rel="stylesheet" href="./connexion.css">
 </head>
 <body>
     <form action="" method="post">

@@ -7,7 +7,7 @@ require_once('mail.php')
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
-    <link rel="stylesheet" href="../../style/connexion.css">
+    <link rel="stylesheet" href="./connexion.css">
 </head>
 <body>
     <form action="" method="post">
