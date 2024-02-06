@@ -15,7 +15,6 @@ DELETE ( DELETE )
 
 ## Créer un utilisateur sur Serveur SQL
 
-### CREATE USER
 ```sql
 CREATE USER 'nom_utilisateur'@'localhost' IDENTIFIED BY 'mot_de_passe';
 -- Utiliser des caractères spéciaux comme @, $, %, etc. peut causer des problèmes
