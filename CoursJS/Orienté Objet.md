@@ -270,3 +270,39 @@ console.log(MonSuperbeClubDeFootball.nbMax)
 console.log(MonSuperbeClubDeFootball.DateAujourdhui())
 // console.log(Club.DateAujourdhui())
 ```
+
+## Les héritages de classe 
+On a vu les héritage d'objet, avec les classes c'est la même chose  mais on peut avoir plusieurs niveaux d'héritage.
+Lorsqu'on crée une nouvelle class en utilisant une autre class comme modèle,  on dit que cette nouvelle class hérite de celle-ci.
+
+Exemple : 
+```js
+class Ligne {
+    constructor(longueur, name){
+        this.Name=name
+        this.Longueur=longueur
+    }
+    taille() {
+        return `Cette ligne est de ${this.Longueur} cm`
+    }
+}
+// Donc Rectangle hérite de Ligne
+// Extends = j’étends la classe Ligne dans Rectangle
+class Rectangle extends Ligne {
+    constructor(longueur, largeur, nom) {
+        this.Largeur = largeur
+        super(nom, longueur) // J'appelle la constructeur de la classe étendu  (Ligne), en lui passant "nom" et "longueur" en paramètre 
+    }
+    aire() {
+        return Math.floor(this.Longueur * this.Largeur)
+    }
+}
+let Rect = new Rectangle(7, 5, 'rect1')
+Rect.aire()
+Rect.taille()
+```
+## La méthode super
+La méthode super sert à appeler une méthode d'un parent (superieure). Elle permet donc de récupérer des propriétés ou des méthodes défini dans le parent
+
+Exemple : (Regarder l'exercice étudiant)
+

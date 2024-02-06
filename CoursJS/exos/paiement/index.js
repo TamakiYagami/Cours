@@ -146,13 +146,13 @@ const panier = new Panier()
 
 document.addEventListener('DOMContentLoaded', function() {
     let Inventaire  = document.getElementById('inventaire')
-    // Je séctionne mes 2 listes HTML
+    // Je sélectionne mes 2 listes HTML
     let Panier      = document.getElementById('panier')
 
     let ButtonAdd   = document.getElementById('ajouter')
     let ButtonSupp  = document.getElementById('supprimer')
     let ButtonBuy   = document.getElementById('buy')
-    // Je séléctionne mes 3 bouton HTML
+    // Je sélectionne mes 3 bouton HTML
 
     Change()
     // Je  mets à jour le solde et la somme totale dans l'interface
@@ -183,18 +183,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const Groseille = new Article('Groseille', 5)
 
     
-    // Ecoute d'évenement Bouton Ajouter au Panier
+    // Écoute d’événement Bouton Ajouter au Panier
     ButtonAdd.addEventListener('click', function() {
-        // querySelectorAll  permet de selectionner plusieurs éléments HTML qui ont un attribut CSS identique
-        // En l'occurence ici l'attirbut option:checked
+        // querySelectorAll  permet de sélectionner plusieurs éléments HTML qui ont un attribut CSS identique
+        // En l’occurrence ici l’attribut option:checked
         let OptionCliked = document.querySelectorAll('#inventaire option:checked') 
         // Le querySelectAll me renvoie un tableau qui liste toute les option:checked meme si il en trouve une seul
-        // Donc je parcour le tableau avec un foreach       
+        // Donc je parcours le tableau avec un foreach       
         OptionCliked.forEach((ElementHTML) => {
             if (ElementHTML !== null){
                 Panier.appendChild(ElementHTML)
                 let ValeurObjet = JSON.parse(ElementHTML.value)
-                // Mon JSON.parse converti ma chaine de caractère précédamment  enregistrée par mon JSON.stringify en Objet Javascript
+                // Mon JSON.parse converti ma chaîne de caractère précédemment  enregistrée par mon JSON.stringify en Objet Javascript
                 panier.ajouterArticle(ValeurObjet)
                 Change()
             }
@@ -202,9 +202,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
     })
 
-    // Ecoute d'évenement Bouton Supprimer du Panier
+    // Écoute d’événement Bouton Supprimer du Panier
     ButtonSupp.addEventListener('click', function() {
-        // Exactement la meme chose que le bouton  ajouter mais on retire les articles du Panier et non pas d'Inventair
+        // Exactement la meme chose que le bouton  ajouter mais on retire les articles du Panier et non pas de l'inventaire
         let OptionCliked = document.querySelectorAll('#panier option:checked')
         OptionCliked.forEach((ElementHTML) => {
             if (ElementHTML !== null){
@@ -217,16 +217,16 @@ document.addEventListener('DOMContentLoaded', function() {
         
     })
 
-    // Ecoute d'évenement Bouton Acheter le Panier
+    // Écoute d’événement Bouton Acheter le Panier
     ButtonBuy.addEventListener('click', function() {
-        // On vérifie si le solde est suffisament élevé pour acheter
+        // On vérifie si le solde est suffisamment élevé pour acheter
         let Total = panier.calculerMontantTotal()
         if (Total >  client.solde) {
             Change()
             // J'affiche une erreur parce que le solde n'est pas suffisant
             document.querySelector('#error').textContent = `Erreur : Désolé, votre solde est insuffisante (${client.solde.toFixed(2)} €). Veuillez recharger votre carte.`
         } else {
-            // J'achete tout le panier avec la carte du client 
+            // j’achète tout le panier avec la carte du client 
             SystemePaiement.effectuerPaiement(client, panier)
             Change()
             // J'actualise l'affichage 
@@ -245,12 +245,12 @@ function Change() {
     let ButtonSupp  = document.getElementById('supprimer')
     let ButtonBuy   = document.getElementById('buy')
 
-    // J'active et désative en fonction des éléments sélectionnés dans les listes
+    // J'active et désactive en fonction des éléments sélectionnés dans les listes
 
     ButtonAdd.disabled  = !Inventaire.value
     ButtonSupp.disabled = !Panier.value
     ButtonBuy.disabled  = !(Panier.children.length > 0)
-    // Panier.children.length dit combien d'enfant posséde Panier (Les enfants de panier son les différentes option)
+    // Panier.children.length dit combien d'enfant possède Panier (Les enfants de panier son les différentes option)
 
     let Wallet          = document.querySelector('#wallet span')
     Wallet.textContent  = client.solde.toFixed(2)
@@ -262,9 +262,12 @@ function Change() {
 function CreateArticle() {
     let InputNom    = document.getElementById('nom')
     let InputPrix   = document.getElementById('prix')
+    // Je récupère mes input HTML
 
     const NewArticle = new Article(InputNom.value, parseFloat(InputPrix.value))
+    // Je créer l'article
 
+    // Je remet à zero les input
     InputNom.value = ''
     InputPrix.value = ''
 
