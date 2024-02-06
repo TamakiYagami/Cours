@@ -1,3 +1,5 @@
+###### Cours Rédiger en français par TamakiYagami pour la formation Développeur Web et Web Mobile
+
 # Cours
 
 ## Coloris et Syntaxe
@@ -38,5 +40,4 @@
         "BOI ". 1       = BOI 1
         "BOI" . 1 . "T" = BOI1T
 
-###### Cours Rédiger en français par TamakiYagami pour la formation Développeur Web et Web Mobile
 
