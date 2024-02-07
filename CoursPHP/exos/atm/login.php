@@ -12,6 +12,8 @@ require_once('../../function/db.php');
     <a href="index.php">Page D'accueil</a>
     <a href="inscription.php">Inscription</a>
     <section>
+         <div class='dossier' onclick=location.href='../'> Retour </div>
+
         <form action="" method="post">
             <span class="num" id="texte">            
                 <input type="text" name="username" id="username">
