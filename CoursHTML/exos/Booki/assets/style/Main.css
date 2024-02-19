@@ -29,10 +29,10 @@ section .hebergement .locations {
     align-items: center;
 }
 
-section .hebergement .location {
+section .location {
     background-color: white;
     border-radius: 20px;
-    width: 350px;
+    width: 320px;
     height: 300px;
     margin-bottom: 35px;
     box-shadow: 4px 4px 1px rgba(134, 134, 134, 0.4);
@@ -74,6 +74,7 @@ section .populaire {
     background-color: #F2F2F2;
     border-radius: 30px;
     padding: 40px;
+    width: 42%;
 }
 section .populaire h3 {
     font-size: 1.7em;
@@ -87,13 +88,79 @@ section .populaire .locations {
     align-items: center;
 }
 section .populaire .location {
-    background-color: antiquewhite;
-    width: 80%;
-    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 75%;
+    height: 170px;
     margin-top: 35px;
+    padding: 2px;
 }
 
 section .populaire img {
-    display: none;
+    height: 100%;
+    width: 100%;
 }
 
+section .populaire .img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: aqua;
+    width: 40%;
+    height: 95%;
+    background-color: aqua;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+section .populaire .location div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 95%;
+    width: 55%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+section .populaire span {
+    margin: 15px;
+}
+section .populaire span:first-child {
+    font-weight: bolder;
+}
+
+section:last-child {
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    padding: 15px;
+}
+section:last-child .activites {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section:last-child .activites article {
+    width: 20%;
+    height: 550px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    overflow: hidden;
+    box-shadow: 4px 4px 1px rgba(134, 134, 134, 0.4);
+
+}
+section:last-child img {
+    height: 500px;
+    min-width: 100%;
+}
+
+section:last-child span {
+    line-height: 40px;
+    margin-left: 15px;
+}

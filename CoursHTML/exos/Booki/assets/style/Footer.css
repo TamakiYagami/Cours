@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 94%;
+    padding: 30px;
+}
+footer h4 {
+    font-weight: bolder;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+footer div a {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px
+}
