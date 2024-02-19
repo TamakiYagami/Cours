@@ -1,9 +1,11 @@
 section {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 94%;
 }
-section .hebergement {
+
+section .hebergement { 
     background-color: #F2F2F2;
     width: 80%;
     border-radius: 30px;
@@ -46,7 +48,6 @@ section .hebergement .location .img {
     width: 97%;
     height: 60%;
     margin-bottom: 15px;
-    background-color: bisque;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin: 5px auto;
@@ -107,10 +108,8 @@ section .populaire img {
 section .populaire .img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: aqua;
     width: 40%;
     height: 95%;
-    background-color: aqua;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -150,7 +149,7 @@ section:last-child .activites article {
     width: 20%;
     height: 550px;
     border-radius: 15px;
-    background-color: aliceblue;
+    background-color: white;
     overflow: hidden;
     box-shadow: 4px 4px 1px rgba(134, 134, 134, 0.4);
 
@@ -163,4 +162,42 @@ section:last-child img {
 section:last-child span {
     line-height: 40px;
     margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 90%;
+    }
+    section .populaire {
+        border-radius: 0;
+        width: 94%;
+        margin: 0;
+    }
+    section .hebergement {
+        background-color: transparent;
+        border-radius: 0;
+        width: 94%;
+        margin: 0;
+    }
+    section .hebergement .location {
+        width: 90%;
+    }
+    section .hebergement p {
+        display: none;
+    }
+    section .activites {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section:last-child .activites article {
+        width: 95%;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    section:last-child .activites article img {
+        height: 250px;
+    }
+
 }

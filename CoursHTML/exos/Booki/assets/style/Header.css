@@ -125,3 +125,37 @@ nav .information {
 nav .information span {
     margin-left: 15px;
 }
+
+@media  screen and (max-width: 768px) {
+    .NavBar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .NavBar img {
+        margin: 50px 0px -10px 0;
+        padding: 0;
+    }
+    .NavBar ul {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .NavBar ul li {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .NavBar ul li:hover {
+        border-top: 0;
+        border-bottom: 2px solid #0065FC;
+    }
+    nav .Filtre {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+}
