@@ -7,7 +7,7 @@ section {
 
 section .hebergement { 
     background-color: #F2F2F2;
-    width: 80%;
+    width: 60%;
     border-radius: 30px;
     padding: 40px;
     margin-right: 40px;
@@ -75,7 +75,7 @@ section .populaire {
     background-color: #F2F2F2;
     border-radius: 30px;
     padding: 40px;
-    width: 42%;
+    width: 28%;
 }
 section .populaire h3 {
     font-size: 1.7em;
