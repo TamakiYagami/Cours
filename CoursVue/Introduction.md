@@ -6,7 +6,7 @@ VueJS est un framework de JavaScript qui est open-source et très populaire. Il 
 
 Pour installer VueJS il suffit d'avoir installer `Node.JS`  et `npm` (Node Package Manager). Pour cela vous pouvez consulter la documentation officielle.
 
-Il faut installer le packet VueJS via npm (Node Package Manager) : 
+(Optionel) Il faut installer le packet VueJS via npm (Node Package Manager) : 
 ```bash
 npm install -g vue --save
 ```
@@ -22,6 +22,23 @@ Pour créer le projet d'application il suffit de faire la commande `vue create <
 vue create premier-cours-de-vuejs
 ```
 
+## Choix Des Fonctionalité
+
+La création du projet vous propose des choix sur les fonctionnalités à inclure dans votre application
+
+`Babel`: est utilisé pour convertir le code en JavaScript compatible avec tous les navigateurs.
+`Router`: permet de définir les routes de chaque page
+`CSS Pre-processors`:  Permet d'utiliser des préprocesseurs comme SASS ou LESS
+`Linter / Formatter`: Serve à vérifier et organiser le code source
+
+On choisi généralement ces 4 fonctionnalités
+
+Préferer utiliser la version 2.x de VueJS qui est moins bugué
+Pour la configuration de `Linter / Formatter` on choisi `ESLint with error prevention only`
+Pour les configuration additionel on choisi `Lint on save`
+On choisi un fichier de configuration dédié (`In dedicated config file`)
+
+
 # Notre Projet
 
 Après la création de notre projet une arborescence de fichier qui est créer 
@@ -32,7 +49,7 @@ Donc tout les modules que on installe en plus dans notre projet se mettraient de
 `public` : Le dossier public stocke l’icône de notre projet et le fichier `index.html`
 Le fichier `index.html` est le fichier de base du projet que on ne touche jamais sauf pour changer l’icône.
 
-`src` : est le dossier qui va contenir plus de 98% de notre site  internet, c’est là qu’on va écrire nos codes HTML, CSS et JavaScript
+`src` : est le dossier qui va contenir plus de 98% de notre site internet, c’est là qu’on va écrire nos codes HTML, CSS et JavaScript
 
 `.eslintrc.js` : est le fichier de configuration  d’Eslint, c’est un outil qui permet de vérifier si votre code respecte ou non certaines normes de codage.
 
@@ -48,22 +65,23 @@ Le fichier `index.html` est le fichier de base du projet que on ne touche jamais
 
 `vue.config.js` : Est la configuration de vue dans notre projet
 
-# Dans `src` 
+## Dans `src` 
 
 On va passer le plus de temps dans ce dossier la 
 Dans le dossier `src` on y trouve plusieurs autre fichier/dossier qui vont nous être très utile : 
 
 `assets` : C'est le dossier qui stocke tout les media (image, video, musique, document, ..)
 
-`components` : Stocke tout les composants de la page (Des  parties réutilisables des pages)
+`components` : Stocke tout les composants de la page (Des  parties réutilisables des pages) 
+Components sont des morceaux de page
 
 `router` : Stocke chaque route des pages 
+Router sont les routes des pages
 
 `views` : Stocke chaque pages
+Views sont les différentes page
 
 `App.vue` : C'est le fichier principal de notre projet. 
 C'est le parent de toutes les autres page
 
 `main.js` : C'est le fichier principal JavaScript de notre projet
-
-
