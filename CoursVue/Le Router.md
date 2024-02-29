@@ -25,9 +25,9 @@ export default router
 On peut ajouter des routes en utilisant l'objet `routes`. Pour cela il est nécessaire de définir une propriété `path`, 
 une propriété `name`, et la propriété `component`.
 
-`path`: path est l'alias du chemin des pages, par exemple la page principal le path est `/`
-`name`: C'est me nom de la page , c'est un identifiant unique pour cette page. On ne peut pas avoir deux fois le même nom de page. Par convention il est en minuscule et sans espace. Exemple : (accueil)
-`component`: Le fichier ou ce trouve la page elle meme que on a import au préalable avec `import Component from './components/Component.vue'`
+- `path`: path est l'alias du chemin des pages, par exemple la page principal le path est `/`
+- `name`: C'est me nom de la page , c'est un identifiant unique pour cette page. On ne peut pas avoir deux fois le même nom de page. Par convention il est en minuscule et sans espace. Exemple : (accueil)
+- `component`: Le fichier ou ce trouve la page elle meme que on a import au préalable avec `import Component from './components/Component.vue'`
 
 ## Rajout de route
 
