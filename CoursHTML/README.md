@@ -33,7 +33,7 @@ Exemple :
 Ici j'ai rajouter un id qui ce nomme MaDiv à ma balise div
 
 ### L'attribut id 
-L'attribut id permet de défini commande va être appelé notre élément HTML dans notre fichier CSS
+L'attribut id permet de définir command va être appelé notre élément HTML dans notre fichier CSS
 Il va être appelé avec `#LeNomDeLID`
 
 ### L'attribut class 
