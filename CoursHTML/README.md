@@ -10,6 +10,7 @@ Les balise HTML son défini avec  des accolades `<balise>` et sont composées de
 - Ouverture d'une balise `<balise>`.
 - Contenu entre l'ouverture et la fermeture.
 - Fermeture de la balise `</balise>`.
+  
 Dans le cas juste au dessus on a donner le nom balise à notre balise mais le nom des balises est déjà défini dans l'HTML
 par exemple il existe la balise `div`, `head`, `body`
 Ces trois balises sont généralement les plus utilisés.
