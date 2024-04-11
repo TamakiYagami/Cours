@@ -63,6 +63,7 @@ const router = new VueRouter({
 export default router
 ```
 Ici pour accéder à ma page accueil dans mon URL de page je devrai juste mettre un slash 
+
 Et pour accéder à ma page about je metterai /about
 
 ## Router View 
