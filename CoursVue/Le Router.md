@@ -32,6 +32,7 @@ une propriété `name`, et la propriété `component`.
 ## Rajout de route
 
 On ajoute une nouvelle route pour la page "Accueil" :
+
 Et une autre route pour la page "About"
 ```js
 import Vue from 'vue'
