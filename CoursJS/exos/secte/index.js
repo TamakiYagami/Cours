@@ -63,17 +63,6 @@ function AddMembre() {
     let InputName = document.getElementById('name')
     let InputGrade = document.getElementById('grade')
 
-    SecteDéveloppeur.add(
-        new member(
-            SecteDéveloppeur.Membres.length + 1, 
-            InputName.value, 
-            InputGrade.value
-        )
-    )
-
-    console.log(SecteDéveloppeur.toString())
-    console.log("------------------------------------------------------")
-
     const tableauHTML = document.getElementsByTagName('table')[0]
 
     const TR = document.createElement('tr')
