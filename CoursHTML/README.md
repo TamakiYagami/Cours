@@ -10,6 +10,7 @@ Les balise HTML son défini avec  des accolades `<balise>` et sont composées de
 - Ouverture d'une balise `<balise>`.
 - Contenu entre l'ouverture et la fermeture.
 - Fermeture de la balise `</balise>`.
+  
 Dans le cas juste au dessus on a donner le nom balise à notre balise mais le nom des balises est déjà défini dans l'HTML
 par exemple il existe la balise `div`, `head`, `body`
 Ces trois balises sont généralement les plus utilisés.
@@ -33,7 +34,7 @@ Exemple :
 Ici j'ai rajouter un id qui ce nomme MaDiv à ma balise div
 
 ### L'attribut id 
-L'attribut id permet de défini commande va être appelé notre élément HTML dans notre fichier CSS
+L'attribut id permet de définir comment va être appelé notre élément HTML dans notre fichier CSS
 Il va être appelé avec `#LeNomDeLID`
 
 ### L'attribut class 

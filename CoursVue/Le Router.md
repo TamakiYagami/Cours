@@ -32,11 +32,15 @@ une propriété `name`, et la propriété `component`.
 ## Rajout de route
 
 On ajoute une nouvelle route pour la page "Accueil" :
+
+Et une autre route pour la page "About"
 ```js
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Accueil from '@/views/Accueil.vue' // Importation de la vue associée à cette page
+import About from '@/views/About.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -44,6 +48,11 @@ const routes = [
     path: '/',
     name: 'accueil',
     component: Accueil
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: About
   }
 ]
 
@@ -54,6 +63,8 @@ const router = new VueRouter({
 export default router
 ```
 Ici pour accéder à ma page accueil dans mon URL de page je devrai juste mettre un slash 
+
+Et pour accéder à ma page about je metterai /about
 
 ## Router View 
 
