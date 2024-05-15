@@ -6,7 +6,8 @@ import ClickMe from '@/views/Boite.vue'
 import ParaVue from '@/views/ParaVue.vue'
 import Alouette from '@/views/Alouette.vue'
 import Perms from '@/views/Perms.vue'
-
+import Titre from '@/views/TitreView.vue'
+import Terme from '@/views/Terme.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,16 @@ const routes = [
     path: '/perms',
     name: 'perms',
     component: Perms
+  },
+  {
+    path: '/titre',
+    name: 'titre',
+    component: Titre
+  },
+  {
+    path: '/terme',
+    name: 'terme',
+    component: Terme
   }
 ]
 

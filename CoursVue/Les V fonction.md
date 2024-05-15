@@ -63,7 +63,7 @@ Exemple :
 ```js
 <template>
     <div>
-        <article v-for="value in 100" :key=value> 
+        <article v-for="value in 100" :key=value > 
             <p>{{ value }}</p>
         </article>
     </div>
@@ -76,12 +76,12 @@ Exemple :
 ```js
 <template>
     <div>
-        <article v-for="(value, index) in obj" :key=index> 
+        <article v-for="(value, index) in obj" :key="index" > 
             <p>{{ value.name }} à {{ value.age }} ans</p>
         </article>
     </div>
 </template>
-<sciprt>
+<script>
     export default {
         data() {
             return {
