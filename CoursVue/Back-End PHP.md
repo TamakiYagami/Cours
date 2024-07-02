@@ -20,4 +20,37 @@ Dans le cas ici on ne met pas Location mais d'autre mot qui permette de faire de
 - Access-Control-Allow-Credentials : Permet de dire si on accepte ou non les identifiant de connexion
 - Access-Control-Max-Age : Permet de définir combien de temps la connexion reste active
 
+Exemple : 
+```php
+    if (isset($_SERVER['HTTP_ORIGIN'])) {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Credentials: true');
+        header('Access-Control-Max-Age: 1000');
+    }
+```
 
+# AXIOS
+
+Axios nous permet de faire des redirections depuis notre application web vers le fichier php souhaité. Pour l'utiliser il faut l'installer dans notre application avec `npm i axios`
+
+Axios permet de faire des requêtes POST, GET, PUT, DELETE
+
+Pour différentes actions : 
+
+- POST : Envoyer des éléments
+- GET : Récupérer des éléments
+- PUT : Modifier des éléments
+- DELETE : Supprimer des éléments
+
+Axios possède donc des fonctions pour chaque type de requêtes
+
+```js
+axios.post("http://localhost/post.php", Donnee)
+axios.get("http://localhost/get.php", Donnee)
+axios.put("http://localhost/put.php", Donnee)
+axios.delete("http://localhost/delete.php", Donnee)
+```
+
+# Envoie de donnée 
+
+Pour l'envoie de donnée il faut utiliser une variable FormData c'est une variable qui permet de stocker des valeurs mais de façon plus stricte et "automatique"
